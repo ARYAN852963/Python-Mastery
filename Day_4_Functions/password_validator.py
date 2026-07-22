@@ -5,10 +5,9 @@ Author: Aryan
 """
 
 def is_valid_password(password):
-    a = len(password)
-    if a >= 8:
+    if len(password) >= 8:
         return True
-    elif a <= 8:
+    else:
         return False
 
 # test_a = is_valid_password("Ayan")

@@ -5,11 +5,11 @@ Author: Aryan
 """
 
 def check_id(age, has_vip_pass):
-    if age >= 18:
-        return "Welcome in!"
-    elif age < 18 and has_vip_pass == True:
+    if has_vip_pass:
         return "Welcome in, VIP!"
-    elif age < 18 and has_vip_pass == False:
+    elif age >= 18:
+        return "Welcome in!"
+    else:
         return "Nikal Gyo gareeb"
 
 # test_a = check_id(19, True)

@@ -4,12 +4,12 @@ Description: Solves the classic FAANG interview question using the correct order
 Author: Aryan
 """
 
-for i in range(1, 31):
-    if i % 2 == 0 and i % 3 == 0:
-        print("FuzzBizz")
-    elif i % 2 == 0:
-        print("Fuzz")
+for i in range(1, 51):
+    if i % 3 == 0 and i % 5 == 0:
+        print("FizzBuzz")
     elif i % 3 == 0:
-        print("Bizz")
+        print("Fizz")
+    elif i % 5 == 0:
+        print("Buzz")
     else:
         print(i)

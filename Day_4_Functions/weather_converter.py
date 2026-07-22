@@ -4,11 +4,11 @@ Description: Performs complex math operations on integer arguments dynamically b
 Author: Aryan
 """
 
-def covert_temp(temp, Scale):
-    if Scale in "C":
+def convert_temp(temp, scale):
+    if scale == "C":
         return (temp * 9/5) + 32
-    if Scale in "F":
+    elif scale == "F":
         return (temp - 32) * 5/9
 
-# test_a = covert_temp(100, "F")
+# test_a = convert_temp(100, "F")
 # print(test_a)

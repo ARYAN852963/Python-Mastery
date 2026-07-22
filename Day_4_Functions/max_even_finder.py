@@ -5,11 +5,14 @@ Author: Aryan
 """
 
 def get_max_even(num_list):
-    count = 0 # The Small king or the weak one.
+    result = None
     for i in num_list:
-        if i % 2 == 0 and i > count:
-            count = i
-    return count
+        if i % 2 == 0:
+            if result is None or i > result:
+                result = i
+    if result is None:
+        return 0
+    return result
 
 # test_list = [13, 22, 9, 45, 102, 73, 10]
 # test_a = get_max_even(test_list)

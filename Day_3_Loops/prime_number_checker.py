@@ -6,9 +6,12 @@ Author: Aryan
 
 number = int(input("Enter a number: "))
 
-for i in range(2, number):
-    if number % i == 0:
-        print("Not a prime")
-        break
+if number < 2:
+    print("Not a prime")
 else:
-    print("Prime")
+    for i in range(2, number):
+        if number % i == 0:
+            print("Not a prime")
+            break
+    else:
+        print("Prime")

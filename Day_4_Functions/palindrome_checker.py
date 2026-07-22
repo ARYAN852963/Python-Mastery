@@ -10,7 +10,7 @@ def s_palindrome(word):
         reversed_word = i + reversed_word
     if reversed_word == word:
         return True
-    elif reversed_word != word:
+    else:
         return False
 
 # test_a = s_palindrome("madam")

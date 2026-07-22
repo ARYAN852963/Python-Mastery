@@ -6,7 +6,7 @@ Author: Aryan
 
 def count_vowels(words):
     count = 0
-    for i in words:
+    for i in words.lower():
         if i in "aeiou":
             count = count + 1
     return count 

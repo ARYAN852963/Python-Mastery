@@ -17,7 +17,7 @@ I am documenting my daily progression from zero to a Top 1% AI Engineer. This re
 | **Total Days** | 4 / 540 |
 | **Phase** | 🔴 Phase 1: Python Mastery |
 | **Difficulty Level** | Lv 4 |
-| **Questions Solved** | ~40+ |
+| **Questions Solved** | 22+ |
 
 ---
 
@@ -27,7 +27,7 @@ I am documenting my daily progression from zero to a Top 1% AI Engineer. This re
 |-----|------|-------|-----------|-----------|--------|
 | 1 | Jul 18 | Data Structures (Lists, Dicts, Sets) | — | Lv 1 | ✅ |
 | 2 | Jul 19 | Conditionals & Control Flow | 1 | Lv 2 | ✅ |
-| 3 | Jul 20 | Loops & Logic Traps | 9 | Lv 3 | ✅ |
+| 3 | Jul 20 | Loops & Logic Traps | 11 | Lv 3 | ✅ |
 | **4** | **Jul 21** | **Functions (Factories)** | **10** | **Lv 4** | ✅ |
 | 5 | Jul 22 | Functions Advanced (*args, **kwargs, recursion) | — | Lv 5 | ⬜ |
 | 6 | Jul 23 | — | — | Lv 5 | ⬜ |
@@ -52,6 +52,8 @@ Developing advanced iteration logic, string accumulators, variable swapping, and
 * `perfect_number_checker.py` - Algorithmic math checking.
 * `alternating_sum.py` - Math toggling (addition vs subtraction based on modulo).
 * `the_z_trap_counter.py` - Emergency loop termination.
+* `vowel_encryptor.py` - String transformation using the `continue` keyword.
+* `type_changer.py` - Type casting (int → str → int) with string reversal and math.
 
 ### Day 4: Functions (Factories) ← CURRENT
 Building reusable logic machines — functions that take inputs, process them, and return outputs.
