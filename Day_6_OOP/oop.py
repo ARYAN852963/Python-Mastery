@@ -79,59 +79,58 @@
 # Account1.deposit(1000008)
 
 #7.
-# class BankAccount:
-#     def __init__(self, Name, balance ):
-#         self.Name = Name
-#         self.balance = balance
-#     def deposit(self, amount):
-#         self.balance = self.balance + amount
-#         print(f"Your balance is {self.balance}")
-#     def withdraw(self, amount):
-#         self.amount = amount
-#         if amount > self.balance:
-#             print("Insufficient Funds")
-#         elif amount < self.balance:
-#             print(f"Your balance is {self.balance - amount}")
-#         else:
-#             print("Error")
-# Account1 = BankAccount("Aryan", 0)
-# Account1.deposit(100000)
-# Account1.withdraw(50000)
+class BankAccount:
+    def __init__(self, Name, balance ):
+        self.Name = Name
+        self.balance = balance
+    def deposit(self, amount):
+        self.balance = self.balance + amount
+        print(f"Your balance is {self.balance}")
+    def withdraw(self, amount):
+        self.amount = amount
+        if amount > self.balance:
+            print("Insufficient Funds")
+        elif amount <= self.balance:
+            self.balance = self.balance - amount
+            print(f"Your balance is {self.balance}")
+Account1 = BankAccount("Aryan", 0)
+Account1.deposit(100000)
+Account1.withdraw(100000)
 
 # 9.
-class team:
-    def __init__(self):
-        self.members = []
-    def add_member(self, hero_name):
-        self.members.append(hero_name)
-    def show_team(self):
-        for i in self.members:
-            print(i)
+# class team:
+#     def __init__(self):
+#         self.members = []
+#     def add_member(self, hero_name):
+#         self.members.append(hero_name)
+#     def show_team(self):
+#         for i in self.members:
+#             print(i)
 
-my_team = team() # Build the empty team
-my_team.add_member("Alice") # Add the first member
-my_team.add_member("Bob") # Add the second member
-my_team.show_team() # Show the team!
+# my_team = team() # Build the empty team
+# my_team.add_member("Alice") # Add the first member
+# my_team.add_member("Bob") # Add the second member
+# my_team.show_team() # Show the team!
 
-# 10.
-class Fighter:
-    def __init__(self, name, hp, damage):
-        self.name = name
-        self.hp = hp
-        self.damage = damage
+# # 10.
+# class Fighter:
+#     def __init__(self, name, hp, damage):
+#         self.name = name
+#         self.hp = hp
+#         self.damage = damage
 
-    def attack(self, target):
-        target.hp = target.hp - self.damage
-        print(f"{self.name} attacks {target.name} for {self.damage} damage!")
+#     def attack(self, target):
+#         target.hp = target.hp - self.damage
+#         print(f"{self.name} attacks {target.name} for {self.damage} damage!")
 
 
-# Create two fighters
-fighter1 = Fighter("Goku", 100, 20)
-fighter2 = Fighter("Vegeta", 100, 15)
+# # Create two fighters
+# fighter1 = Fighter("Goku", 100, 20)
+# fighter2 = Fighter("Vegeta", 100, 15)
 
-# Goku attacks Vegeta
-fighter1.attack(fighter2)
+# # Goku attacks Vegeta
+# fighter1.attack(fighter2)
 
-# Print Vegeta's remaining HP
-print(f"{fighter2.name}'s remaining HP is {fighter2.hp}")
+# # Print Vegeta's remaining HP
+# print(f"{fighter2.name}'s remaining HP is {fighter2.hp}")
 
